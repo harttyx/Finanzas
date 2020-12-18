@@ -1,0 +1,76 @@
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  color: #111;
+  padding: 14px 35px;
+  text-decoration: none;
+  transition: all 0.6s;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background: #076943;
+  color: #ffffff;
+}
+
+.auth-btn {
+  width: 108px;
+  height: 36px;
+  margin-left: 35px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 17px;
+}
+.active {
+  color: #00A859 !important;
+}
+.active:hover {
+  background: none !important;
+  cursor: default;
+}
+ion-icon {
+  font-size: 30px;
+  display: none;
+}
+@media only screen and (max-device-width: 800px) {
+  #webNav {
+    display: none;
+  }
+  ion-icon {
+    display: block;
+  }
+}

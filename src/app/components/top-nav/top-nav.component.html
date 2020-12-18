@@ -1,0 +1,37 @@
+<header>
+  <div class="logo">
+    <img
+      style="cursor: pointer;"
+      routerLink=""
+      routerLinkActive="active"
+      src="../../../assets/images/finanzasLogo.svg"
+      alt="Finanzas"
+    />
+  </div>
+  <nav id="webNav">
+    <ul>
+      <li>
+        <a
+          [ngClass]="{ active: selected === 'about' }"
+          routerLink="about"
+          routerLinkActive="active"
+          href=""
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a [ngClass]="{ active: selected === 'partners' }" href="">Partners</a>
+      </li>
+      <li>
+        <a [ngClass]="{ active: selected === 'blog' }" href="">Blog</a>
+      </li>
+      <li>
+        <button class="auth-btn green-btn">Register</button>
+      </li>
+      <li>
+        <button class="auth-btn trans-btn">Login</button>
+      </li>
+    </ul>
+  </nav>
+  <ion-icon name="menu"></ion-icon>
+</header>
