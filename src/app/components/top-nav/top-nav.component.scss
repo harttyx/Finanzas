@@ -55,3 +55,22 @@ li a:hover {
   font-size: 12px;
   line-height: 17px;
 }
+.active {
+  color: #00A859 !important;
+}
+.active:hover {
+  background: none !important;
+  cursor: default;
+}
+ion-icon {
+  font-size: 30px;
+  display: none;
+}
+@media only screen and (max-device-width: 800px) {
+  #webNav {
+    display: none;
+  }
+  ion-icon {
+    display: block;
+  }
+}
