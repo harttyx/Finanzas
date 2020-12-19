@@ -35,7 +35,7 @@ button:hover {
   position: relative;
   display: flex;
   align-content: center;
-  justify-content: center;
+  justify-content: space-between;
   column-gap: 80px;
   row-gap: 50px;
 }
@@ -44,4 +44,9 @@ button:hover {
   flex-direction: column;
   max-width: 417px;
   position: relative;
+}
+@media only screen and (min-device-width: 1500px) {
+  .landing-banner {
+    justify-content: center;
+  }
 }
