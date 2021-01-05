@@ -13,4 +13,14 @@ export class TopNavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cancel() {
+    let menu = <HTMLDivElement>document.getElementById("mobile-menu")
+    menu.style.left = "-100vw"
+  }
+
+  showMenu() {
+    let menu = <HTMLDivElement>document.getElementById("mobile-menu")
+    menu.style.left = "0"
+  }
+
 }
