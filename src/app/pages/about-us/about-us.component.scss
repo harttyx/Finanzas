@@ -1,37 +1,38 @@
+$body-padding: 10.4vw !default;
+
 .landing-view {
   background: rgba(0, 168, 89, 0.04);
   height: auto;
   min-height: 684px;
   position: relative;
   overflow: hidden;
-  padding: 0 10.4vw;
+  padding: 0 $body-padding;
 }
 .rings{
   position: absolute;
   z-index: -1;
-  top: 900px;
+  top: 318px;
   left: 0;
-  height: 584px;
-  width: 140px;
-  background: url('../../../assets/images/rings.svg');
-  background-repeat: no-repeat;
+}
+.rings-img {
+  max-height: 400px;
 }
 .sphere {
   position: absolute;
   z-index: -1;
-  top: 8.1vh;
-  right: 42vw;
-  height: 300px;
-  width: 300px;
-  background: url('../../../assets/images/sphere.svg');
-  background-repeat: no-repeat;
+  top: -2.625rem;
+  right: -2.625rem;
+}
+.sphere-img {
+  width: 21.6vw;
+  max-width: 200px;
 }
 .landing-banner-about {
   position: absolute;
   top: 35%;
   left: 0;
   width: 100vw;
-  padding: 0 10.4vw;
+  padding: 0 $body-padding;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -63,11 +64,24 @@ img {
 
 
 @media only screen and (max-device-width: 800px) {
-  .landing-view-img {
-    display: none;
+  .rings{
+    top: 188px;
+  }
+  .sphere {
+    top: -1.625rem;
+    right: -1.625rem;
+  }
+  .landing-banner-about {
+    padding: 0 7.8vw;
+  }
+  .landing-banner {
+    flex-direction: column;
+    margin-top: 30px;
   }
   .landing-view {
-    max-height: 700px !important;
+    min-height: 500px;
+    padding: 0 7.8vw;
+    padding-bottom: 0 !important;
   }
   .landing-view.short {
     min-height: auto;
@@ -82,3 +96,33 @@ img {
     padding-bottom: 0 !important;
   }
 }
+@media only screen and (max-device-width: 770px) {
+  .landing-view-img {
+    order: 1;
+  }
+  .image-con {
+    max-height: 200px;
+    overflow: hidden;
+  }
+  .image3 {
+    max-height: 260px !important;
+  }
+  .landing-view-content {
+    order: 2;
+  }
+  .landing-title {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .landing-title-mobile-width {
+    max-width: 260px !important;
+  }
+  .landing-txt-mobile-width {
+    max-width: 290px !important;
+  }
+  .landing-txt{
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+

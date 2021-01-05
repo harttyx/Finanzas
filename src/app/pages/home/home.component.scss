@@ -1,10 +1,13 @@
+$body-padding: 10.4vw !default;
+
 .landing-view {
   background: rgba(0, 168, 89, 0.04);
   height: 100vh;
   max-height: 948px;
+  min-height: 670px;
   position: relative;
   overflow: hidden;
-  padding: 0 10.4vw;
+  padding: 0 $body-padding;
 }
 a {
   text-decoration: none;
@@ -12,32 +15,39 @@ a {
 .sphere {
   position: absolute;
   z-index: -1;
-  top: 8.1vh;
-  right: 42vw;
-  height: 300px;
-  width: 300px;
-  background: url('../../../assets/images/sphere.svg');
-  background-repeat: no-repeat;
+  top: -2.625rem;
+  left: -2.625rem;
+}
+.sphere.sphere2 {
+  top: -2.625rem;
+  right: -2.625rem;
+  left: auto;
+}
+.sphere-img {
+  width: 21.6vw;
+  max-width: 200px;
 }
 .dotted-box {
   position: absolute;
   z-index: -1;
-  top: 67vh;
-  right: 7.8vw;
-  height: 200px;
-  width: 200px;
-  background: url('../../../assets/images/dottedbox.svg');
-  background-repeat: no-repeat;
+  bottom: -2.625rem;
+  right: -2.625rem;
+}
+.dotted-box.box2 {
+  left: -2.625rem;
+  right: auto;
+}
+.dotted-img {
+  width: 19.7vw;
+  max-width: 200px;
 }
 .rings{
   position: absolute;
   z-index: -1;
-  top: 9.2vh;
-  left: 0;
-  height: 584px;
-  width: 140px;
-  background: url('../../../assets/images/rings.svg');
-  background-repeat: no-repeat;
+  top: 25.2vh;
+}
+.rings-img {
+  max-height: 400px;
 }
 .content-title {
   margin-top: 65px;
@@ -123,7 +133,7 @@ img {
   color: #707070;
 }
 .partners-container {
-  padding: 0 10.4vw 18.4vh 10.4vw;
+  padding: 0 $body-padding 18.4vh $body-padding;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,12 +155,42 @@ img {
   justify-content: center;
   flex-wrap: wrap;
 }
+.image-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (max-device-width: 800px) {
-  .landing-view-img {
-    display: none;
+  .landing-banner {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .help-view{
+    padding-bottom: 100px;
+  }
+  .dotted-box {
+    bottom: -1.625rem;
+    right: -1.625rem;
+  }
+  .dotted-box.box2 {
+    left: -1.625rem;
+    right: auto;
+  }
+  .sphere {
+    top: -1.625rem;
+    left: -1.625rem;
+  }
+  .sphere.sphere2 {
+    top: -1.625rem;
+    right: -1.625rem;
+    left: auto;
+  }
+  .rings{
+    top: 50.2vh;
   }
   .landing-view {
     max-height: 700px !important;
+    padding: 10px 7.8vw 0 7.8vw !important;
   }
   .landing-view.short {
     max-height: 500px !important;
@@ -161,5 +201,52 @@ img {
   }
   .help-title {
     font-size: 30px;
+  }
+  .cards-container {
+    margin-top: 60px;
+  }
+}
+@media only screen and (max-device-width: 770px) {
+  .landing-view-img {
+    order: 1;
+  }
+  .image-con {
+    max-height: 200px;
+    overflow: hidden;
+  }
+  .image3 {
+    max-height: 260px !important;
+  }
+  .landing-view-content {
+    order: 2;
+  }
+  .help-title {
+    font-size: 25px;
+    line-height: 31px;
+  }
+  .card-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .card-txt {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+  .content-title {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .content-txt {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .partners-container {
+    padding: 0 7.8vw 18.4vh 7.8vw !important;
+  }
+}
+@media only screen and (min-device-height: 1000px) {
+  .landing-view {
+    height: 800px;
   }
 }

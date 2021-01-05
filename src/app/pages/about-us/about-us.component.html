@@ -2,21 +2,24 @@
   <section style="padding-top: 10px;" class="landing-view">
     <app-top-nav [selected]="selectedPage"></app-top-nav>
     <div class="landing-banner-about">
-      <div style="text-align: center;" class="landing-title">
+      <div style="text-align: center;" class="landing-title landing-title-mobile-width">
         Providing quick access to funds for businesses in need.
       </div>
-      <div style="text-align: center;" class="landing-txt">
+      <div style="text-align: center;" class="landing-txt landing-txt-mobile-width">
         With Finanzas, you will have quick access to funds to get your
         business going in no time. Your business ideas can be fully funded
         with just few steps. Payment would be made to you in few days with Finanzas.
       </div>
     </div>
   </section>
-  <section style="background: none; overflow: visible; height: auto; padding-top: 100px; padding-bottom: 120px;" class="landing-view short">
+  <section style="background: none; position: relative; overflow: visible; height: auto; padding-top: 100px; padding-bottom: 120px;" class="landing-view">
+    <div class="rings">
+      <img src="./assets/images/rings.svg" class="rings-img" alt="">
+    </div>
     <div>
       <div style="margin-top: 0;" class="landing-banner">
         <div class="landing-view-img">
-          <img loading="lazy" src="../../../assets/images/aboutImg1.png" alt="">
+          <img loading="lazy" src="./assets/images/aboutImg1.png" alt="">
         </div>
         <div style="row-gap: 25px;" class="landing-view-content">
           <div style="margin-top: 120px;" class="landing-title">
@@ -39,10 +42,8 @@
       </div>
     </div>
   </section>
-  <section style="background: none; overflow: visible; padding-top: 100px; padding-bottom: 120px;" class="landing-view short">
-    <div style="top: -70px; right: 103px;" class="sphere">
-    </div>
-    <div style="overflow: hidden;">
+  <section style="background: none; overflow: visible; padding-top: 100px; padding-bottom: 120px;" class="landing-view">
+    <div>
       <div style="margin: 0;" class="landing-banner">
         <div style="row-gap: 25px;" class="landing-view-content">
           <div style="margin-top: 160px;" class="landing-title">
@@ -54,11 +55,14 @@
           </div>
           <div style="text-align: left;" class="landing-txt">
             <span style="font-weight: 500; color: #000000">Strategy</span> –
-            settung up strategic and trading relaions with the participants of the Nigerian small-medium market.
+            setting up strategic and trading relaions with the participants of the Nigerian small-medium market.
           </div>
         </div>
         <div class="landing-view-img">
-          <img src="../../../assets/images/aboutImg2.png" alt="">
+          <div class="sphere">
+            <img src="./assets/images/sphere.svg" class="sphere-img" alt="">
+          </div>
+          <img src="./assets/images/aboutImg2.png" alt="">
         </div>
       </div>
     </div>
@@ -70,4 +74,3 @@
     <app-footer></app-footer>
   </footer>
 </div>
-<div class="rings"></div>
