@@ -15,12 +15,12 @@ export class TopNavComponent implements OnInit {
 
   cancel() {
     let menu = <HTMLDivElement>document.getElementById("mobile-menu")
-    menu.style.left = "-100vw"
+    menu.style.right = "-100vw"
   }
 
   showMenu() {
     let menu = <HTMLDivElement>document.getElementById("mobile-menu")
-    menu.style.left = "0"
+    menu.style.right = "0"
   }
 
 }
