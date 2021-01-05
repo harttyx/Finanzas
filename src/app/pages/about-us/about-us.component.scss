@@ -35,7 +35,7 @@ $body-padding: 10.4vw !default;
   padding: 0 $body-padding;
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  gap: 24px;
   align-items: center;
   justify-items: center;
 }
