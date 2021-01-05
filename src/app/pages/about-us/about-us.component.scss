@@ -35,7 +35,6 @@ $body-padding: 10.4vw !default;
   padding: 0 $body-padding;
   display: flex;
   flex-direction: column;
-  gap: 24px;
   align-items: center;
   justify-items: center;
 }
@@ -99,6 +98,7 @@ img {
 @media only screen and (max-device-width: 770px) {
   .landing-view-img {
     order: 1;
+    margin-bottom: 50px;
   }
   .image-con {
     max-height: 200px;
