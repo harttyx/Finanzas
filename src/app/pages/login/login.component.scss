@@ -73,7 +73,7 @@ input:matches(
   padding: 0 15px !important;
 }
 .input:focus {
-  border: 0.3px solid #076943;
+  border: 1px solid #076943 !important;
 }
 .form-footer {
   display: flex;
