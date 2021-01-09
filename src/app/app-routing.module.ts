@@ -1,3 +1,4 @@
+import { LoginComponent } from './pages/login/login.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutUsComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-top-nav',
@@ -8,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TopNavComponent implements OnInit {
   @Input() selected: string | undefined
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -21,6 +22,10 @@ export class TopNavComponent implements OnInit {
   showMenu() {
     let menu = <HTMLDivElement>document.getElementById("mobile-menu")
     menu.style.right = "0"
+  }
+
+  login() {
+    this.router.navigateByUrl('/login')
   }
 
 }
