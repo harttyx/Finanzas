@@ -51,7 +51,6 @@ input:matches(
   [type="email"],
   [type="number"],
   [type="password"],
-  [type="checkbox"],
   [type="date"],
   [type="search"],
   [type="tel"],
@@ -75,6 +74,9 @@ input:matches(
 }
 .input:focus {
   border: 1px solid #076943 !important;
+}
+.form-checkbox {
+  background-clip: padding-box !important;
 }
 .form-footer {
   display: flex;
