@@ -44,21 +44,7 @@ button:hover {
   max-width: 417px;
   position: relative;
 }
-input:matches(
-  [type="email"],
-  [type="number"],
-  [type="password"],
-  [type="date"],
-  [type="search"],
-  [type="tel"],
-  [type="text"],
-  [type="url"]
-) {
-  /* Remove default appearance */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+
 @media only screen and (min-device-width: 1500px) {
   .landing-banner {
     justify-content: center;

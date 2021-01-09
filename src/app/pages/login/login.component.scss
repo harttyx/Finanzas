@@ -47,14 +47,29 @@
   line-height: 17px;
   color: #000000;
 }
+input:matches(
+  [type="email"],
+  [type="number"],
+  [type="password"],
+  [type="date"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="url"]
+) {
+  /* Remove default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .input {
-  background: #FFFFFF;
-  border: 0.3px solid #C4C4C4;
-  box-sizing: border-box;
-  border-radius: 5px;
-  height: 54px;
-  width: 100%;
-  padding: 0 15px;
+  background: #FFFFFF !important;
+  border: 1px solid #C4C4C4 !important;
+  box-sizing: border-box !important;
+  border-radius: 5px !important;
+  height: 54px !important;
+  width: 100% !important;
+  padding: 0 15px !important;
 }
 .input:focus {
   border: 0.3px solid #076943;
